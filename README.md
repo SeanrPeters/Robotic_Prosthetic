@@ -4,8 +4,8 @@
 ### **Here is a snippet of the kind of data that was recorded: **
 ![myosensd](https://user-images.githubusercontent.com/58159948/210028997-f634e93c-a61a-43a6-b4dc-c456d5dd86de.png)
 ### Here you can see a difference in voltage under channels 1 and 2 which indicates activity in the muscle that the sensors are attached to. Three sensors were required in order to record this data. The first two sensors record the differential of voltage between point A and point B on the fingers muscles. The third sensor was used as a ground or default which was placed on the knuckle of the finger. 
-### **Here is a reference photo: **
+### **Here is a reference photo:** 
 ![fingersensing](https://user-images.githubusercontent.com/58159948/210029346-40728bfb-e4a5-487f-915d-67884fec108d.png)
 ### Here you can see the different channels in the background reacting to the movement of my finger. There were 8 channels available but only three were necessary for our prosthetic. 
 ### The other source file dealt with the implementation of multiple bmp_180 pressure sensors. To be able to read from more than 2 sensors, we needed to incorporate an I2C bus library along with the use of a multiplexer. While this does not give us the ability to read from three sensors simultaneously, it allows us to switch from sensor to sensor quickly enough to give off the illusion of having multiple sensors reading data at the same time. These pressure sensors were used to simulate touch and to ensure that the prosthetic knew when to stop moving even when there was voltage being read from the muscle. The plan was to have a tightening sensation on the base of the prosthetic when the pressure sensors recorded pressure. This would give the user some of their touch back.  
-### **Here is an abstract visualization of the prosthetic: **![prosthetic_model](https://user-images.githubusercontent.com/58159948/210029641-5db15880-7d25-41c3-bf7f-6cfd488b2045.png)
+### **Here is an abstract visualization of the prosthetic:**![prosthetic_model](https://user-images.githubusercontent.com/58159948/210029641-5db15880-7d25-41c3-bf7f-6cfd488b2045.png)
